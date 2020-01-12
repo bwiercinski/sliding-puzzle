@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('bg.png') black;
+	background-position: bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+#grid-container {
+	width: 640px;
+	height: 640px;
+	margin: 0 auto;
+	position: relative;
+	background: #feffd7;
+	border: 10px solid #feffd7;
+	border-radius: 5px;
+}
+
+.tile {
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	background: url('diehard.png');
+	background-size: 640px 640px;
+	background-position: top 10px left 10px;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+
+.tile.speed {
+	transition: all 0.03s ease 0s;
+}
+
+.game-button {
+	font-size: 30px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	background: #feffd7;
+	border: 10px solid #feffd7;
+	border-radius: 5px;
+}
+
+#game-control {
+ text-align: center;
+}
+
+.game-button:hover {
+	background: #e0b777;
+	border-color: #e0b777;
+}
+
+#game-message {
+	text-align: center;
+	font-size: 50px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	color: #feffd7;
+	margin: 10px 0;
+}
