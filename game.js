@@ -91,7 +91,7 @@ function onTileClicked(tileInfo) {
 
     if (allTiles.every(tile => tile.position.row === tile.originalPostion.row
         && tile.position.column === tile.originalPostion.column)) {
-        gameMessageRef.innerHTML = 'Vicotry!';
+        gameMessageRef.innerHTML = 'Victory!';
     } else {
         gameMessageRef.innerHTML = '&nbsp;';
     }
